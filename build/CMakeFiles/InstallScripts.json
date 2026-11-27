@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"E:/sevm/mochi_modules/mochinode_net/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,27 @@
+{
+  "name": "mochinode_net",
+  "version": "0.1.0",
+  "type": "native-engine-plugin",
+  "description": "TCP/HTTP over Winsock2: server (httpServer/httpAccept/httpRead/httpWrite/httpClose) + client tcpConnect (non-blocking connect + 5s select)",
+  "status": "verified",
+  "entry_point": "mbjs_init_module",
+  "runtime_exports": [
+    "httpAccept",
+    "httpClose",
+    "httpRead",
+    "httpServer",
+    "httpWrite",
+    "tcpConnect"
+  ],
+  "sources": [
+    "native/mochinode_net.c"
+  ],
+  "headers": [
+    "include/mochinode_net_abi.h"
+  ],
+  "binaries": {
+    "x86_64-windows": "lib/mochinode_net_x86_64.dll"
+  },
+  "js_binding": "src/index.js",
+  "engine": "E:/bcf/mochiberry/build_manual/mbjs.exe"
+}
